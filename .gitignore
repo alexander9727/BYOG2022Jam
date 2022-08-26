@@ -1,0 +1,17 @@
+Library/
+Temp/
+obj/
+Logs/
+*.sln
+.vs
+*.csproj
+*.csproj
+Assembly-CSharp.csproj
+*.csproj
+Builds
+.vsconfig
+UserSettings/EditorUserSettings.asset
+ProjectSettings/VersionControlSettings.asset
+ProjectSettings/PackageManagerSettings.asset
+*.log
+Assets/StreamingAssets/
