@@ -7,10 +7,6 @@ public class VerticalSpriteStack : MonoBehaviour
     [SerializeField] float XOffset;
     [SerializeField] int OffsetCount;
     [SerializeField] float YSpace;
-    void Start()
-    {
-
-    }
 
 #if UNITY_EDITOR
     private void OnValidate()
