@@ -4,5 +4,6 @@ using UnityEngine;
 
 public abstract class InteractionBase : MonoBehaviour
 {
+    [SerializeField] GameObject Hint;
     public abstract void PerformInteraction();
 }

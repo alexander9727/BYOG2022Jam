@@ -25,9 +25,9 @@ public class PipeScript : MonoBehaviour
     {
         bool isValid = PipeType switch
         {
-            //TypesOfPipe.Straight => Mathf.DeltaAngle(transform.eulerAngles.z, CorrectRotation) < maxOffset || 
-            //Mathf.DeltaAngle(transform.eulerAngles.z, CorrectRotation - 180) < maxOffset || 
-            //Mathf.DeltaAngle(transform.eulerAngles.z, CorrectRotation + 180) < maxOffset,
+            TypesOfPipe.Straight => Mathf.Abs(Mathf.DeltaAngle(transform.rotation.eulerAngles.z, CorrectRotation)) < maxOffset ||
+           Mathf.Abs(Mathf.DeltaAngle(transform.rotation.eulerAngles.z, CorrectRotation - 180)) < maxOffset ||
+            Mathf.Abs(Mathf.DeltaAngle(transform.rotation.eulerAngles.z, CorrectRotation + 180)) < maxOffset,
             _ => Mathf.Abs(Mathf.DeltaAngle(transform.rotation.eulerAngles.z, CorrectRotation)) < maxOffset
         };
         UpdateDisplayIndicator(isValid);
