@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    [SerializeField] Transform MainCamera;
     [SerializeField] float MoveSpeed = 5;
+    [SerializeField] GameObject DialogueBox;
     Rigidbody2D RB2D;
     private void Awake()
     {
@@ -23,5 +25,8 @@ public class PlayerController : MonoBehaviour
             y = Input.GetAxis("Vertical")
         };
         RB2D.velocity = velocity * MoveSpeed;
+        MainCamera.position = transform.position;
     }
+
+
 }
