@@ -30,6 +30,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField] Image HPFillBar;
     float HP;
 
+    [Header("Player Sounds")]
+    [SerializeField] AudioClip WalkingSound;
+    [SerializeField] float FootstepRepeatInterval;
+    float LastFootSoundTime;
+    AudioSource FootstepSource;
 
     bool CanMove => !DialogueBox.activeSelf; //Add more checks
 
@@ -37,6 +42,7 @@ public class PlayerController : MonoBehaviour
     private void Awake()
     {
         RB2D = GetComponent<Rigidbody2D>();
+        FootstepSource = GetComponent<AudioSource>();
     }
     void Start()
     {
@@ -94,8 +100,16 @@ public class PlayerController : MonoBehaviour
             y = Input.GetAxis("Vertical")
         };
         RB2D.velocity = velocity * MoveSpeed;
+
         if (velocity.sqrMagnitude > 0)
+        {
             transform.GetChild(0).up = velocity.normalized;
+            if(Time.time - LastFootSoundTime > FootstepRepeatInterval)
+            {
+                LastFootSoundTime = Time.time;
+                FootstepSource.PlayOneShot(WalkingSound);
+            }
+        }
         //CameraOffset = RB2D.velocity.normalized;
     }
 
