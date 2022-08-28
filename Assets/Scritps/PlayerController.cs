@@ -12,6 +12,9 @@ public class PlayerController : MonoBehaviour
 
     [Header("Camera Movement")]
     [SerializeField] Transform MainCamera;
+    [SerializeField] float MovementDirectionOffset;
+    [SerializeField] float CameraLerpSpeed;
+    Vector3 CameraOffset;
 
     [Header("Dialogue")]
     [SerializeField] GameObject DialogueBox;
@@ -20,12 +23,13 @@ public class PlayerController : MonoBehaviour
     [SerializeField] TextMeshProUGUI DialogueCharacterText;
     [SerializeField] float CharactersPerSecond;
     [SerializeField] DialogueData SampleDialogue;
+    [SerializeField] Vector3 DialougeCameraOffset;
 
     [Header("Health System")]
     [SerializeField] float MaxHP = 100;
     [SerializeField] Image HPFillBar;
     float HP;
-
+    
 
     bool CanMove => !DialogueBox.activeSelf; //Add more checks
 
@@ -51,9 +55,11 @@ public class PlayerController : MonoBehaviour
             UpdatePlayerPosition();
             CheckPlayerInteraction();
         }
+    }
+
+    private void FixedUpdate()
+    {
         UpdateCamera();
-
-
     }
 
     void CheckPlayerInteraction()
@@ -88,11 +94,13 @@ public class PlayerController : MonoBehaviour
             y = Input.GetAxis("Vertical")
         };
         RB2D.velocity = velocity * MoveSpeed;
+        CameraOffset = RB2D.velocity.normalized;
     }
 
     void UpdateCamera()
     {
-        MainCamera.position = transform.position;
+        Vector3 cameraPosition = transform.position + CameraOffset * MovementDirectionOffset;
+        MainCamera.position = Vector3.Lerp(MainCamera.position, cameraPosition, CameraLerpSpeed * Time.deltaTime);
     }
 
     public void ShowDialogue(DialogueData startDialogue)
@@ -102,7 +110,7 @@ public class PlayerController : MonoBehaviour
 
     IEnumerator IterateThroughDialogue(DialogueData dialogue)
     {
-        //TODO: Move camera
+        CameraOffset = DialougeCameraOffset;
         DialogueBox.SetActive(true);
         while (dialogue != null)
         {
@@ -112,7 +120,6 @@ public class PlayerController : MonoBehaviour
             dialogue = dialogue.NextDialogue;
         }
         DialogueBox.SetActive(false);
-        //TODO: Reset camera
     }
 
     void SetDialogue(DialogueData dialogue)
