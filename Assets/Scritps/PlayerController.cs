@@ -29,7 +29,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float MaxHP = 100;
     [SerializeField] Image HPFillBar;
     float HP;
-    
+
 
     bool CanMove => !DialogueBox.activeSelf; //Add more checks
 
@@ -67,7 +67,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             var colliders = Physics2D.OverlapCircleAll(transform.position, InteractionRadius);
-            foreach(var col in colliders)
+            foreach (var col in colliders)
             {
                 InteractionBase interaction = col.GetComponent<InteractionBase>();
                 if (interaction == null) continue;
@@ -94,6 +94,8 @@ public class PlayerController : MonoBehaviour
             y = Input.GetAxis("Vertical")
         };
         RB2D.velocity = velocity * MoveSpeed;
+        if (velocity.sqrMagnitude > 0)
+            transform.GetChild(0).up = velocity.normalized;
         //CameraOffset = RB2D.velocity.normalized;
     }
 
