@@ -94,7 +94,7 @@ public class PlayerController : MonoBehaviour
             y = Input.GetAxis("Vertical")
         };
         RB2D.velocity = velocity * MoveSpeed;
-        CameraOffset = RB2D.velocity.normalized;
+        //CameraOffset = RB2D.velocity.normalized;
     }
 
     void UpdateCamera()

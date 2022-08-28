@@ -251,7 +251,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea5a5fc2e4b31644d89688735e74ed32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PipeType: 2
+  PipeType: 4
   CorrectRotation: 0
   CorrectIndicator: {fileID: 3630219655167066873}
 --- !u!1 &3630219654764024471

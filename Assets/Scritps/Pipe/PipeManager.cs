@@ -12,6 +12,7 @@ public class PipeManager : MonoBehaviour
     void Start()
     {
         IsCorrect = false;
+        AllPipes = GetComponentsInChildren<PipeScript>();
     }
 
     private void Update()
@@ -19,11 +20,11 @@ public class PipeManager : MonoBehaviour
         bool isCorrect = true;
         foreach(PipeScript pipe in AllPipes)
         {
-            if (!isCorrect)
-            {
-                pipe.UpdateDisplayIndicator(false);
-                continue;
-            }
+            //if (!isCorrect)
+            //{
+            //    pipe.UpdateDisplayIndicator(false);
+            //    continue;
+            //}
             if (!pipe.Validate(MaxPipeDifference))
             {
                 isCorrect = false;
