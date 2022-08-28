@@ -16,4 +16,4 @@ MonoBehaviour:
   CharacterName: Mr. Jones Copplestone
   Dialogue: Oh! Maybe these pipes need to connect in the right order for the door
     to open
-  NextDialogue: {fileID: 11400000, guid: 9db769ed076b4884eabe205b38a4406a, type: 2}
+  NextDialogue: {fileID: 0}

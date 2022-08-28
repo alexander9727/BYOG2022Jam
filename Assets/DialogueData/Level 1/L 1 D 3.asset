@@ -15,4 +15,4 @@ MonoBehaviour:
   CharacterHead: {fileID: 21300000, guid: 89df9a7e77e58b5488a2001aa0b14581, type: 3}
   CharacterName: Mr. Jones Copplestone
   Dialogue: "I\u2019m sure the artefact is here, just have to search for it now."
-  NextDialogue: {fileID: 11400000, guid: 68a8ca99c7de36f4ebed4f660972ae70, type: 2}
+  NextDialogue: {fileID: 0}

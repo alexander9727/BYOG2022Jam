@@ -22,7 +22,7 @@ public class FinalTrigger : MonoBehaviour
     {
         if (collision.CompareTag(Constants.PlayerTag))
         {
-            collision.GetComponent<PlayerController>().enabled = false;
+            collision.GetComponentInParent<PlayerController>().enabled = false;
             ShouldMove = true;
         }
     }

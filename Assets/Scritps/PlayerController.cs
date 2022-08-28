@@ -6,6 +6,9 @@ using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
+    [SerializeField] GameObject MainMenu;
+    [SerializeField] DialogueData StartDialogue;
+
     [Header("Player Data")]
     [SerializeField] float MoveSpeed = 5;
     [SerializeField] float InteractionRadius = 1;
@@ -43,14 +46,22 @@ public class PlayerController : MonoBehaviour
 
     [HideInInspector] public bool HasKey;
 
-    bool CanMove => !DialogueBox.activeSelf; //Add more checks
+    bool CanMove => !DialogueBox.activeSelf && !MainMenu.activeSelf; //Add more checks
 
     Rigidbody2D RB2D;
     private void Awake()
     {
         RB2D = GetComponent<Rigidbody2D>();
         FootstepSource = GetComponent<AudioSource>();
+        MainMenu.SetActive(true);
     }
+
+    public  void PlayGame()
+    {
+        MainMenu.SetActive(false);
+        ShowDialogue(StartDialogue);
+    }
+
     void Start()
     {
         DialogueBox.SetActive(false);
