@@ -28,7 +28,7 @@ public class PipeManager : MonoBehaviour
             //}
             if (!pipe.Validate(MaxPipeDifference))
             {
-                Debug.Log(pipe);
+                //Debug.Log(pipe);
                 isCorrect = false;
             }
         }
