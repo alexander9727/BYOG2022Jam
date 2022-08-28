@@ -119,12 +119,12 @@ TextureImporter:
       name: 10_Green wall flora_0
       rect:
         serializedVersion: 2
-        x: 13
-        y: 31
-        width: 19
-        height: 13
+        x: 35
+        y: 92
+        width: 65
+        height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -140,12 +140,12 @@ TextureImporter:
       name: 10_Green wall flora_1
       rect:
         serializedVersion: 2
-        x: 46
-        y: 15
-        width: 17
-        height: 21
+        x: 137
+        y: 49
+        width: 54
+        height: 59
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -161,12 +161,12 @@ TextureImporter:
       name: 10_Green wall flora_2
       rect:
         serializedVersion: 2
-        x: 18
-        y: 15
-        width: 14
-        height: 7
+        x: 50
+        y: 43
+        width: 50
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -182,12 +182,12 @@ TextureImporter:
       name: 10_Green wall flora_3
       rect:
         serializedVersion: 2
-        x: 68
-        y: 12
-        width: 13
-        height: 15
+        x: 201
+        y: 30
+        width: 46
+        height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
