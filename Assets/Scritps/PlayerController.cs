@@ -36,6 +36,12 @@ public class PlayerController : MonoBehaviour
     float LastFootSoundTime;
     AudioSource FootstepSource;
 
+    [Header("Camera Shake")]
+    [SerializeField] float CameraShakeDuration = 1;
+    [SerializeField] float CameraShakeSpeed = 10;
+    [SerializeField] float CameraShakeOffset = 2;
+
+
     bool CanMove => !DialogueBox.activeSelf; //Add more checks
 
     Rigidbody2D RB2D;
@@ -174,5 +180,39 @@ public class PlayerController : MonoBehaviour
     public void DecreaseHP(float amount)
     {
         SetHP(HP - amount);
+    }
+
+    public void ShakeCamera()
+    {
+        StartCoroutine(ShakeTransform(MainCamera.GetChild(0), CameraShakeDuration, CameraShakeSpeed, CameraShakeOffset));
+    }
+
+    IEnumerator ShakeTransform(Transform t, float shakeDuration, float shakeSpeed, float shakeOffset)
+    {
+        Vector3 original = t.localPosition;
+        float time = 0;
+
+        Vector3 newPosition = original + UnityEngine.Random.insideUnitSphere * shakeOffset;
+
+        while (time < shakeDuration)
+        {
+            time += Time.deltaTime;
+
+            t.localPosition = Vector3.MoveTowards(t.localPosition, newPosition, shakeSpeed * Time.deltaTime);
+
+            if (t.localPosition == newPosition)
+            {
+                newPosition = original + UnityEngine.Random.insideUnitSphere * shakeOffset;
+            }
+            yield return null;
+        }
+
+        while (t.localPosition != original)
+        {
+            t.localPosition = Vector3.MoveTowards(t.localPosition, original, shakeSpeed * Time.deltaTime);
+            yield return null;
+        }
+
+        t.localPosition = original;
     }
 }
