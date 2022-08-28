@@ -84,6 +84,9 @@ MonoBehaviour:
   HPFillBar: {fileID: 0}
   WalkingSound: {fileID: 8300000, guid: e0a461ad59a1f8c41b8c9adcf135a00b, type: 3}
   FootstepRepeatInterval: 0.25
+  CameraShakeDuration: 1
+  CameraShakeSpeed: 10
+  CameraShakeOffset: 0.2
 --- !u!82 &3917173414471634346
 AudioSource:
   m_ObjectHideFlags: 0

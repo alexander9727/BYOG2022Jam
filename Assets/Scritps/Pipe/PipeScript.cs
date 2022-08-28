@@ -21,7 +21,10 @@ public class PipeScript : MonoBehaviour
     {
         CorrectRotation = transform.rotation.eulerAngles.z;
         if (CanRotate)
+        {
+            GetComponent<Rigidbody2D>().centerOfMass = Vector2.zero;
             transform.rotation = Quaternion.Euler(0, 0, Random.Range(0, 360));
+        }
         else
             GetComponent<Rigidbody2D>().freezeRotation = true;
     }
