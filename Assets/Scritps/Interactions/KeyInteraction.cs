@@ -2,17 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class KeyInteraction : MonoBehaviour
+public class KeyInteraction : InteractionBase
 {
-    // Start is called before the first frame update
-    void Start()
+    public override void PerformInteraction()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        FindObjectOfType<PlayerController>().HasKey = true;
+        gameObject.SetActive(false);
     }
 }

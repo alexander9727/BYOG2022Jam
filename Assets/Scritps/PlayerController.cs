@@ -41,6 +41,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float CameraShakeSpeed = 10;
     [SerializeField] float CameraShakeOffset = 2;
 
+    [HideInInspector] public bool HasKey;
 
     bool CanMove => !DialogueBox.activeSelf; //Add more checks
 
