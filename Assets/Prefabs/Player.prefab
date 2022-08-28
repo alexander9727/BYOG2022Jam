@@ -83,7 +83,7 @@ MonoBehaviour:
   MaxHP: 100
   HPFillBar: {fileID: 0}
   WalkingSound: {fileID: 8300000, guid: e0a461ad59a1f8c41b8c9adcf135a00b, type: 3}
-  FootstepRepeatInterval: 0.25
+  FootstepRepeatInterval: 0.4
   CameraShakeDuration: 1
   CameraShakeSpeed: 10
   CameraShakeOffset: 0.2
@@ -99,7 +99,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.663
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -193,7 +193,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4095084321565029363}
   - component: {fileID: 4095084321565029361}
-  - component: {fileID: 4095084321565029360}
+  - component: {fileID: 5692146182902130042}
   m_Layer: 0
   m_Name: 15_Character
   m_TagString: Untagged
@@ -268,8 +268,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!60 &4095084321565029360
-PolygonCollider2D:
+--- !u!58 &5692146182902130042
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -281,41 +281,6 @@ PolygonCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2, y: 1.35}
-    newSize: {x: 2, y: 1.35}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.90999997, y: -0.175}
-      - {x: 0.95, y: -0.085}
-      - {x: 0.95, y: -0.005}
-      - {x: 0.84999996, y: 0.114999995}
-      - {x: 0.71999997, y: 0.195}
-      - {x: 0.53999996, y: 0.225}
-      - {x: 0.39999998, y: 0.355}
-      - {x: 0.28, y: 0.445}
-      - {x: 0.06, y: 0.545}
-      - {x: -0.03, y: 0.545}
-      - {x: -0.07, y: 0.53499997}
-      - {x: -0.26999998, y: 0.445}
-      - {x: -0.35999998, y: 0.39499998}
-      - {x: -0.57, y: 0.225}
-      - {x: -0.72999996, y: 0.16499999}
-      - {x: -0.85999995, y: 0.095}
-      - {x: -0.94, y: 0.015}
-      - {x: -0.94, y: -0.125}
-      - {x: -0.83, y: -0.275}
-      - {x: -0.55, y: -0.385}
-      - {x: -0.29, y: -0.515}
-      - {x: -0.12, y: -0.555}
-      - {x: 0.17999999, y: -0.555}
-      - {x: 0.38, y: -0.465}
-      - {x: 0.53, y: -0.385}
-      - {x: 0.74, y: -0.315}
+  m_Offset: {x: 0.008211892, y: -0.04105987}
+  serializedVersion: 2
+  m_Radius: 0.4196819
