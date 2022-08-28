@@ -2031,6 +2031,7 @@ MonoBehaviour:
   AllPipes:
   - {fileID: 0}
   - {fileID: 0}
+  PipeParent: {fileID: 0}
   HasValidated:
     m_PersistentCalls:
       m_Calls: []

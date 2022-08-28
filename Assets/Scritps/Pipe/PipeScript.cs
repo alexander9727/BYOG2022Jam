@@ -17,6 +17,7 @@ public class PipeScript : MonoBehaviour
     [SerializeField] float CorrectRotation;
     [SerializeField] GameObject CorrectIndicator;
     [SerializeField] bool CanRotate;
+    [SerializeField] bool IsRelevantToPuzzle;
     private void Start()
     {
         CorrectRotation = transform.rotation.eulerAngles.z;
@@ -31,7 +32,7 @@ public class PipeScript : MonoBehaviour
 
     public bool Validate(float maxOffset)
     {
-        bool isValid = !CanRotate ? true : PipeType switch
+        bool isValid = !CanRotate || !IsRelevantToPuzzle ? true : PipeType switch
         {
             TypesOfPipe.Straight => Mathf.Abs(Mathf.DeltaAngle(transform.rotation.eulerAngles.z, CorrectRotation)) < maxOffset ||
             Mathf.Abs(Mathf.DeltaAngle(transform.rotation.eulerAngles.z, CorrectRotation - 180)) < maxOffset ||

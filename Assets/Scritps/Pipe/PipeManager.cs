@@ -7,12 +7,13 @@ public class PipeManager : MonoBehaviour
 {
     [SerializeField] float MaxPipeDifference;
     [SerializeField] PipeScript[] AllPipes;
+    [SerializeField] Transform PipeParent;
     [SerializeField] UnityEvent<bool> HasValidated;
     bool IsCorrect = false;
     void Start()
     {
         IsCorrect = false;
-        AllPipes = GetComponentsInChildren<PipeScript>();
+        AllPipes = PipeParent.GetComponentsInChildren<PipeScript>();
     }
 
     private void Update()
@@ -27,6 +28,7 @@ public class PipeManager : MonoBehaviour
             //}
             if (!pipe.Validate(MaxPipeDifference))
             {
+                Debug.Log(pipe);
                 isCorrect = false;
             }
         }
