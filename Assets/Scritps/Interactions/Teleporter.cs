@@ -13,6 +13,7 @@ public class Teleporter : MonoBehaviour
         {
             Debug.Log("Moving");
             other.GetComponentInParent<PlayerController>().transform.position = OtherTeleporter.transform.position;
+            GetComponent<AudioSource>().Play();
         }
     }
 }
