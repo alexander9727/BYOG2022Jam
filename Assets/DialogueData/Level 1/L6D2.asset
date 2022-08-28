@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b5a1f0c344e5694da54b60730e02da7, type: 3}
+  m_Name: L6D2
+  m_EditorClassIdentifier: 
+  CharacterHead: {fileID: 21300000, guid: 89df9a7e77e58b5488a2001aa0b14581, type: 3}
+  CharacterName: Mr. Jones Copplestone
+  Dialogue: "Alright, all this experience taught me to be smarter.\r\nLet\u2019s
+    take a look at these. Looks like it rotates may some sort of puzzle\r\nIt\u2019s
+    emitting some sort of ray of light, I\u2019ll connect them all. Let\u2019s see.\r\n"
+  NextDialogue: {fileID: 0}
