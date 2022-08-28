@@ -161,6 +161,7 @@ MonoBehaviour:
   PipeType: 2
   CorrectRotation: 0
   CorrectIndicator: {fileID: 6338016464481755349}
+  CanRotate: 1
 --- !u!1 &6338016464079237307
 GameObject:
   m_ObjectHideFlags: 0

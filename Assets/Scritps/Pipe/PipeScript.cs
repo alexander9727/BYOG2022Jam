@@ -16,15 +16,22 @@ public class PipeScript : MonoBehaviour
     [SerializeField] TypesOfPipe PipeType;
     [SerializeField] float CorrectRotation;
     [SerializeField] GameObject CorrectIndicator;
-
+    [SerializeField] bool CanRotate;
     private void Start()
     {
-        transform.rotation = Quaternion.Euler(0, 0, Random.Range(0, 360));
+        CorrectRotation = transform.rotation.eulerAngles.z;
+        if (CanRotate)
+        {
+            GetComponent<Rigidbody2D>().centerOfMass = Vector2.zero;
+            transform.rotation = Quaternion.Euler(0, 0, Random.Range(0, 360));
+        }
+        else
+            GetComponent<Rigidbody2D>().freezeRotation = true;
     }
 
     public bool Validate(float maxOffset)
     {
-        bool isValid = PipeType switch
+        bool isValid = !CanRotate ? true : PipeType switch
         {
             TypesOfPipe.Straight => Mathf.Abs(Mathf.DeltaAngle(transform.rotation.eulerAngles.z, CorrectRotation)) < maxOffset ||
             Mathf.Abs(Mathf.DeltaAngle(transform.rotation.eulerAngles.z, CorrectRotation - 180)) < maxOffset ||

@@ -30,6 +30,17 @@ public class PlayerController : MonoBehaviour
     [SerializeField] Image HPFillBar;
     float HP;
 
+    [Header("Player Sounds")]
+    [SerializeField] AudioClip WalkingSound;
+    [SerializeField] float FootstepRepeatInterval;
+    float LastFootSoundTime;
+    AudioSource FootstepSource;
+
+    [Header("Camera Shake")]
+    [SerializeField] float CameraShakeDuration = 1;
+    [SerializeField] float CameraShakeSpeed = 10;
+    [SerializeField] float CameraShakeOffset = 2;
+
 
     bool CanMove => !DialogueBox.activeSelf; //Add more checks
 
@@ -37,6 +48,7 @@ public class PlayerController : MonoBehaviour
     private void Awake()
     {
         RB2D = GetComponent<Rigidbody2D>();
+        FootstepSource = GetComponent<AudioSource>();
     }
     void Start()
     {
@@ -94,8 +106,16 @@ public class PlayerController : MonoBehaviour
             y = Input.GetAxis("Vertical")
         };
         RB2D.velocity = velocity * MoveSpeed;
+
         if (velocity.sqrMagnitude > 0)
+        {
             transform.GetChild(0).up = velocity.normalized;
+            if(Time.time - LastFootSoundTime > FootstepRepeatInterval)
+            {
+                LastFootSoundTime = Time.time;
+                FootstepSource.PlayOneShot(WalkingSound);
+            }
+        }
         //CameraOffset = RB2D.velocity.normalized;
     }
 
@@ -160,5 +180,39 @@ public class PlayerController : MonoBehaviour
     public void DecreaseHP(float amount)
     {
         SetHP(HP - amount);
+    }
+
+    public void ShakeCamera()
+    {
+        StartCoroutine(ShakeTransform(MainCamera.GetChild(0), CameraShakeDuration, CameraShakeSpeed, CameraShakeOffset));
+    }
+
+    IEnumerator ShakeTransform(Transform t, float shakeDuration, float shakeSpeed, float shakeOffset)
+    {
+        Vector3 original = t.localPosition;
+        float time = 0;
+
+        Vector3 newPosition = original + UnityEngine.Random.insideUnitSphere * shakeOffset;
+
+        while (time < shakeDuration)
+        {
+            time += Time.deltaTime;
+
+            t.localPosition = Vector3.MoveTowards(t.localPosition, newPosition, shakeSpeed * Time.deltaTime);
+
+            if (t.localPosition == newPosition)
+            {
+                newPosition = original + UnityEngine.Random.insideUnitSphere * shakeOffset;
+            }
+            yield return null;
+        }
+
+        while (t.localPosition != original)
+        {
+            t.localPosition = Vector3.MoveTowards(t.localPosition, original, shakeSpeed * Time.deltaTime);
+            yield return null;
+        }
+
+        t.localPosition = original;
     }
 }
