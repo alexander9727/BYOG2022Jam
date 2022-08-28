@@ -9,7 +9,8 @@ public class DialogueTrigger : MonoBehaviour
     {
         if (other.CompareTag(Constants.PlayerTag))
         {
-            other.GetComponent<PlayerController>().ShowDialogue(Dialogue);
+            other.GetComponentInParent<PlayerController>().ShowDialogue(Dialogue);
+            gameObject.SetActive(false);
         }
     }
 }

@@ -11,7 +11,7 @@ public class TriggerPlayerDamage : MonoBehaviour
         if (IsConstant) return;
         if (other.CompareTag(Constants.PlayerTag))
         {
-            other.GetComponent<PlayerController>().DecreaseHP(Damage);
+            other.GetComponentInParent<PlayerController>().DecreaseHP(Damage);
         }
     }
 
@@ -21,7 +21,7 @@ public class TriggerPlayerDamage : MonoBehaviour
         {
             if (other.CompareTag(Constants.PlayerTag))
             {
-                other.GetComponent<PlayerController>().DecreaseHP(Damage);
+                other.GetComponentInParent<PlayerController>().DecreaseHP(Damage);
             }
         }
     }
