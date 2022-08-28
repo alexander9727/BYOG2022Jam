@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2062,6 +2062,98 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 97379299}
     m_Modifications:
+    - target: {fileID: 2031036016531276237, guid: bf0c9a6854f540144beb1e511213cea0, type: 3}
+      propertyPath: CanRotate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2031036016531276237, guid: bf0c9a6854f540144beb1e511213cea0, type: 3}
+      propertyPath: IsRelevantToPuzzle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2031036016550602382, guid: bf0c9a6854f540144beb1e511213cea0, type: 3}
+      propertyPath: CanRotate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2031036016550602382, guid: bf0c9a6854f540144beb1e511213cea0, type: 3}
+      propertyPath: IsRelevantToPuzzle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2031036016763502222, guid: bf0c9a6854f540144beb1e511213cea0, type: 3}
+      propertyPath: IsRelevantToPuzzle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2031036016767663686, guid: bf0c9a6854f540144beb1e511213cea0, type: 3}
+      propertyPath: CanRotate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2031036016767663686, guid: bf0c9a6854f540144beb1e511213cea0, type: 3}
+      propertyPath: IsRelevantToPuzzle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2031036016893261770, guid: bf0c9a6854f540144beb1e511213cea0, type: 3}
+      propertyPath: CanRotate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2031036016893261770, guid: bf0c9a6854f540144beb1e511213cea0, type: 3}
+      propertyPath: IsRelevantToPuzzle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2031036016901189793, guid: bf0c9a6854f540144beb1e511213cea0, type: 3}
+      propertyPath: IsRelevantToPuzzle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2031036017019211456, guid: bf0c9a6854f540144beb1e511213cea0, type: 3}
+      propertyPath: CanRotate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2031036017019211456, guid: bf0c9a6854f540144beb1e511213cea0, type: 3}
+      propertyPath: IsRelevantToPuzzle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2031036017913944349, guid: bf0c9a6854f540144beb1e511213cea0, type: 3}
+      propertyPath: IsRelevantToPuzzle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2031036018004135248, guid: bf0c9a6854f540144beb1e511213cea0, type: 3}
+      propertyPath: CanRotate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2031036018004135248, guid: bf0c9a6854f540144beb1e511213cea0, type: 3}
+      propertyPath: IsRelevantToPuzzle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2031036018134699180, guid: bf0c9a6854f540144beb1e511213cea0, type: 3}
+      propertyPath: IsRelevantToPuzzle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2031036018160604958, guid: bf0c9a6854f540144beb1e511213cea0, type: 3}
+      propertyPath: CanRotate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2031036018160604958, guid: bf0c9a6854f540144beb1e511213cea0, type: 3}
+      propertyPath: IsRelevantToPuzzle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2031036018195671619, guid: bf0c9a6854f540144beb1e511213cea0, type: 3}
+      propertyPath: CanRotate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2031036018195671619, guid: bf0c9a6854f540144beb1e511213cea0, type: 3}
+      propertyPath: IsRelevantToPuzzle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2031036018248221653, guid: bf0c9a6854f540144beb1e511213cea0, type: 3}
+      propertyPath: CanRotate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2031036018248221653, guid: bf0c9a6854f540144beb1e511213cea0, type: 3}
+      propertyPath: IsRelevantToPuzzle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2031036018358839250, guid: bf0c9a6854f540144beb1e511213cea0, type: 3}
+      propertyPath: IsRelevantToPuzzle
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3384104688968183808, guid: bf0c9a6854f540144beb1e511213cea0, type: 3}
       propertyPath: m_Size.x
       value: 2.3150582
@@ -2333,6 +2425,10 @@ PrefabInstance:
     - target: {fileID: 3384104689110921403, guid: bf0c9a6854f540144beb1e511213cea0, type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[27].y
       value: -0.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 3510223487148873597, guid: bf0c9a6854f540144beb1e511213cea0, type: 3}
+      propertyPath: IsRelevantToPuzzle
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4619511904138653110, guid: bf0c9a6854f540144beb1e511213cea0, type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.size
@@ -4134,6 +4230,86 @@ PrefabInstance:
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[27].y
       value: -0.71
       objectReference: {fileID: 0}
+    - target: {fileID: 6481297548957993935, guid: bf0c9a6854f540144beb1e511213cea0, type: 3}
+      propertyPath: IsRelevantToPuzzle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6481297549092820508, guid: bf0c9a6854f540144beb1e511213cea0, type: 3}
+      propertyPath: IsRelevantToPuzzle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6481297549936090058, guid: bf0c9a6854f540144beb1e511213cea0, type: 3}
+      propertyPath: IsRelevantToPuzzle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6481297550211102441, guid: bf0c9a6854f540144beb1e511213cea0, type: 3}
+      propertyPath: IsRelevantToPuzzle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6541608897738153109, guid: bf0c9a6854f540144beb1e511213cea0, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.085564
+      objectReference: {fileID: 0}
+    - target: {fileID: 6541608897738153109, guid: bf0c9a6854f540144beb1e511213cea0, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.085564
+      objectReference: {fileID: 0}
+    - target: {fileID: 6541608897738153109, guid: bf0c9a6854f540144beb1e511213cea0, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.085564
+      objectReference: {fileID: 0}
+    - target: {fileID: 6618871222732370299, guid: bf0c9a6854f540144beb1e511213cea0, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.085564
+      objectReference: {fileID: 0}
+    - target: {fileID: 6618871222732370299, guid: bf0c9a6854f540144beb1e511213cea0, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.085564
+      objectReference: {fileID: 0}
+    - target: {fileID: 6618871222732370299, guid: bf0c9a6854f540144beb1e511213cea0, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.085564
+      objectReference: {fileID: 0}
+    - target: {fileID: 6895440570655813351, guid: bf0c9a6854f540144beb1e511213cea0, type: 3}
+      propertyPath: IsRelevantToPuzzle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8989480234118199028, guid: bf0c9a6854f540144beb1e511213cea0, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.58457
+      objectReference: {fileID: 0}
+    - target: {fileID: 8989480234118199028, guid: bf0c9a6854f540144beb1e511213cea0, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.58457
+      objectReference: {fileID: 0}
+    - target: {fileID: 8989480234118199028, guid: bf0c9a6854f540144beb1e511213cea0, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.58457
+      objectReference: {fileID: 0}
+    - target: {fileID: 9156026444375416859, guid: bf0c9a6854f540144beb1e511213cea0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9156026444375416861, guid: bf0c9a6854f540144beb1e511213cea0, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6339073
+      objectReference: {fileID: 0}
+    - target: {fileID: 9156026444375416861, guid: bf0c9a6854f540144beb1e511213cea0, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6339073
+      objectReference: {fileID: 0}
+    - target: {fileID: 9156026444375416861, guid: bf0c9a6854f540144beb1e511213cea0, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.6339073
+      objectReference: {fileID: 0}
+    - target: {fileID: 9156026444375416861, guid: bf0c9a6854f540144beb1e511213cea0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 9156026444375416861, guid: bf0c9a6854f540144beb1e511213cea0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.08
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf0c9a6854f540144beb1e511213cea0, type: 3}
 --- !u!1001 &4095084321859805346
@@ -4297,13 +4473,41 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 847052219942999792, guid: 1764fe9728f17d445afa535da9ce080d, type: 3}
+      propertyPath: IsRelevantToPuzzle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1867300950080138171, guid: 1764fe9728f17d445afa535da9ce080d, type: 3}
+      propertyPath: IsRelevantToPuzzle
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1867300950481358991, guid: 1764fe9728f17d445afa535da9ce080d, type: 3}
       propertyPath: CanRotate
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1867300950481358991, guid: 1764fe9728f17d445afa535da9ce080d, type: 3}
+      propertyPath: IsRelevantToPuzzle
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1867300950769643514, guid: 1764fe9728f17d445afa535da9ce080d, type: 3}
       propertyPath: CanRotate
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1867300951526888190, guid: 1764fe9728f17d445afa535da9ce080d, type: 3}
+      propertyPath: IsRelevantToPuzzle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1867300951670700377, guid: 1764fe9728f17d445afa535da9ce080d, type: 3}
+      propertyPath: IsRelevantToPuzzle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2926289917661723778, guid: 1764fe9728f17d445afa535da9ce080d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.39358443
+      objectReference: {fileID: 0}
+    - target: {fileID: 2926289917661723778, guid: 1764fe9728f17d445afa535da9ce080d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.942
       objectReference: {fileID: 0}
     - target: {fileID: 2926289917684382006, guid: 1764fe9728f17d445afa535da9ce080d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4317,9 +4521,33 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -0.6
       objectReference: {fileID: 0}
+    - target: {fileID: 2926289917843025640, guid: 1764fe9728f17d445afa535da9ce080d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.32708597
+      objectReference: {fileID: 0}
+    - target: {fileID: 2926289917843025640, guid: 1764fe9728f17d445afa535da9ce080d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.145
+      objectReference: {fileID: 0}
     - target: {fileID: 2926289918018764063, guid: 1764fe9728f17d445afa535da9ce080d, type: 3}
       propertyPath: m_LocalPosition.y
       value: -2.322
+      objectReference: {fileID: 0}
+    - target: {fileID: 2926289918282728806, guid: 1764fe9728f17d445afa535da9ce080d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.34015137
+      objectReference: {fileID: 0}
+    - target: {fileID: 2926289918282728806, guid: 1764fe9728f17d445afa535da9ce080d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.145
+      objectReference: {fileID: 0}
+    - target: {fileID: 2926289918497589219, guid: 1764fe9728f17d445afa535da9ce080d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.47129408
+      objectReference: {fileID: 0}
+    - target: {fileID: 2926289918497589219, guid: 1764fe9728f17d445afa535da9ce080d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9.535
       objectReference: {fileID: 0}
     - target: {fileID: 4114078623800230953, guid: 1764fe9728f17d445afa535da9ce080d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4413,25 +4641,69 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: 1.149
       objectReference: {fileID: 0}
+    - target: {fileID: 6644073773135429447, guid: 1764fe9728f17d445afa535da9ce080d, type: 3}
+      propertyPath: IsRelevantToPuzzle
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6644073773143062722, guid: 1764fe9728f17d445afa535da9ce080d, type: 3}
       propertyPath: CanRotate
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6644073773143062722, guid: 1764fe9728f17d445afa535da9ce080d, type: 3}
+      propertyPath: IsRelevantToPuzzle
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6644073773415004490, guid: 1764fe9728f17d445afa535da9ce080d, type: 3}
       propertyPath: CanRotate
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6644073773415004490, guid: 1764fe9728f17d445afa535da9ce080d, type: 3}
+      propertyPath: IsRelevantToPuzzle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6644073773474009627, guid: 1764fe9728f17d445afa535da9ce080d, type: 3}
+      propertyPath: IsRelevantToPuzzle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6644073773729218691, guid: 1764fe9728f17d445afa535da9ce080d, type: 3}
+      propertyPath: IsRelevantToPuzzle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6644073773762030352, guid: 1764fe9728f17d445afa535da9ce080d, type: 3}
+      propertyPath: IsRelevantToPuzzle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6644073774035206317, guid: 1764fe9728f17d445afa535da9ce080d, type: 3}
+      propertyPath: IsRelevantToPuzzle
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6644073774041629462, guid: 1764fe9728f17d445afa535da9ce080d, type: 3}
       propertyPath: CanRotate
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6644073774041629462, guid: 1764fe9728f17d445afa535da9ce080d, type: 3}
+      propertyPath: IsRelevantToPuzzle
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6644073774363864438, guid: 1764fe9728f17d445afa535da9ce080d, type: 3}
       propertyPath: CanRotate
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6644073774437993475, guid: 1764fe9728f17d445afa535da9ce080d, type: 3}
+      propertyPath: IsRelevantToPuzzle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6644073774666535132, guid: 1764fe9728f17d445afa535da9ce080d, type: 3}
+      propertyPath: IsRelevantToPuzzle
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6644073774926130158, guid: 1764fe9728f17d445afa535da9ce080d, type: 3}
       propertyPath: CanRotate
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6644073774926130158, guid: 1764fe9728f17d445afa535da9ce080d, type: 3}
+      propertyPath: IsRelevantToPuzzle
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7993059011943920480, guid: 1764fe9728f17d445afa535da9ce080d, type: 3}
       propertyPath: m_LocalScale.x

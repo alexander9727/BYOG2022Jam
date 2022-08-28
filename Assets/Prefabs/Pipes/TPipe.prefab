@@ -234,10 +234,10 @@ GameObject:
   m_Component:
   - component: {fileID: 3714196852733563605}
   - component: {fileID: 3714196852733563604}
-  - component: {fileID: 3714196852733563606}
   - component: {fileID: 3714196852733563607}
   - component: {fileID: 3714196852733563609}
   - component: {fileID: 3714196852733563608}
+  - component: {fileID: 538883462259857148}
   m_Layer: 6
   m_Name: Pipe
   m_TagString: Untagged
@@ -312,49 +312,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!60 &3714196852733563606
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3714196852733563602}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.67, y: 0.5}
-    oldSize: {x: 1.9, y: 2.4}
-    newSize: {x: 3, y: 3}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.64, y: 0.62}
-      - {x: 0.78, y: 0.68}
-      - {x: 0.79999995, y: 0.71}
-      - {x: 0.79999995, y: 1.18}
-      - {x: -0.16, y: 1.18}
-      - {x: -0.28, y: 1.17}
-      - {x: -0.19999999, y: 0.71999997}
-      - {x: -0.88, y: 0.48}
-      - {x: -0.9, y: 0.47}
-      - {x: -0.9, y: -0.51}
-      - {x: -0.89, y: -0.62}
-      - {x: -0.38, y: -0.53}
-      - {x: -0.19, y: -0.59999996}
-      - {x: -0.26, y: -1.14}
-      - {x: -0.22999999, y: -1.16}
-      - {x: 0.79999995, y: -1.16}
-      - {x: 0.79999995, y: -0.66999996}
-      - {x: 0.65999997, y: -0.59}
 --- !u!50 &3714196852733563607
 Rigidbody2D:
   serializedVersion: 4
@@ -415,3 +372,31 @@ MonoBehaviour:
   PipeType: 5
   CorrectRotation: 0
   CorrectIndicator: {fileID: 3714196852129880161}
+  CanRotate: 0
+  IsRelevantToPuzzle: 0
+--- !u!61 &538883462259857148
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3714196852733563602}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.32482323, y: 0.010741472}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.654, y: 0.5}
+    oldSize: {x: 1.9, y: 2.4}
+    newSize: {x: 3, y: 3}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.4202309, y: 2.0491238}
+  m_EdgeRadius: 0
