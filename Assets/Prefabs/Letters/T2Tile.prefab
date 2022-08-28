@@ -100,9 +100,9 @@ BoxCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.02, y: 0, z: 0.02, w: 0}
+    border: {x: 0.004, y: 0, z: 0.004, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.98, y: 0.6}
+    oldSize: {x: 0.396, y: 0.24}
     newSize: {x: 0.7840559, y: 0.6}
     adaptiveTilingThreshold: 0.5
     drawMode: 2
@@ -213,7 +213,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.6, y: 0.6}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -332,7 +332,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.6, y: 0.6}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -449,9 +449,9 @@ BoxCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.02, y: 0, z: 0.02, w: 0}
+    border: {x: 0.004, y: 0, z: 0.004, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.98, y: 0.6}
+    oldSize: {x: 0.396, y: 0.24}
     newSize: {x: 0.84976757, y: 0.6}
     adaptiveTilingThreshold: 0.5
     drawMode: 2
@@ -860,9 +860,9 @@ BoxCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.02, y: 0, z: 0.02, w: 0}
+    border: {x: 0.004, y: 0, z: 0.004, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.98, y: 0.6}
+    oldSize: {x: 0.396, y: 0.24}
     newSize: {x: 0.9385873, y: 0.6}
     adaptiveTilingThreshold: 0.5
     drawMode: 2
@@ -1477,7 +1477,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.6, y: 0.6}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1596,7 +1596,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.6, y: 0.6}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1748,9 +1748,9 @@ BoxCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.02, y: 0, z: 0.02, w: 0}
+    border: {x: 0.004, y: 0, z: 0.004, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.98, y: 0.6}
+    oldSize: {x: 0.396, y: 0.24}
     newSize: {x: 6.158534, y: 0.6}
     adaptiveTilingThreshold: 0.5
     drawMode: 2
@@ -1912,9 +1912,9 @@ BoxCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.02, y: 0, z: 0.02, w: 0}
+    border: {x: 0.004, y: 0, z: 0.004, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.98, y: 0.6}
+    oldSize: {x: 0.396, y: 0.24}
     newSize: {x: 2.197715, y: 0.6}
     adaptiveTilingThreshold: 0.5
     drawMode: 2
@@ -2078,9 +2078,9 @@ BoxCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.02, y: 0, z: 0.02, w: 0}
+    border: {x: 0.004, y: 0, z: 0.004, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.98, y: 0.6}
+    oldSize: {x: 0.396, y: 0.24}
     newSize: {x: 0.70110154, y: 0.6}
     adaptiveTilingThreshold: 0.5
     drawMode: 2
@@ -2191,7 +2191,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.6, y: 0.6}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -2511,7 +2511,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.6, y: 0.6}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -2712,9 +2712,9 @@ BoxCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.02, y: 0, z: 0.02, w: 0}
+    border: {x: 0.004, y: 0, z: 0.004, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.98, y: 0.6}
+    oldSize: {x: 0.396, y: 0.24}
     newSize: {x: 3.279797, y: 0.6}
     adaptiveTilingThreshold: 0.5
     drawMode: 2
@@ -2823,9 +2823,9 @@ BoxCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.02, y: 0, z: 0.02, w: 0}
+    border: {x: 0.004, y: 0, z: 0.004, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.98, y: 0.6}
+    oldSize: {x: 0.396, y: 0.24}
     newSize: {x: 3.8363595, y: 0.6}
     adaptiveTilingThreshold: 0.5
     drawMode: 2
@@ -2934,9 +2934,9 @@ BoxCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.02, y: 0, z: 0.02, w: 0}
+    border: {x: 0.004, y: 0, z: 0.004, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.98, y: 0.6}
+    oldSize: {x: 0.396, y: 0.24}
     newSize: {x: 3.7204947, y: 0.6}
     adaptiveTilingThreshold: 0.5
     drawMode: 2
@@ -3166,7 +3166,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.6, y: 0.6}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
