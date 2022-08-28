@@ -122,6 +122,7 @@ public class PlayerController : MonoBehaviour
             dialogue = dialogue.NextDialogue;
         }
         DialogueBox.SetActive(false);
+        CameraOffset = Vector3.zero;
     }
 
     void SetDialogue(DialogueData dialogue)
